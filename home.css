@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+*{
+    font-family: "Comfortaa", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.heroo{
+    background-color: #1F3A5F;
+}
+
+.BGReplacer{
+    background: linear-gradient(white, #1F3A5F);
+}
+
+.BGG{
+    display: flex;
+    justify-content: center;  /* центрирование по горизонтали */
+    align-items: center;
+}
+
+
+
+.heroo p{
+    padding: 20px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.mrDown{
+    padding-bottom: 100px;
+}
+
+.mrDown1{
+    padding-top: 10px;
+}
+.mrDown50{
+    padding-bottom: 50px;
+}
+
+
+.header{
+    z-index: 1000;
+    position: absolute; /* Оставляем */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #1F3A5F; /* Прозрачный фон */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-sizing: border-box;
+    color: white; /* Добавь, чтобы текст был виден на темном фоне картинки */
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+
+
+.uslug{
+    border-radius: 40px;
+    background-color: #1F3A5F;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.action p{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.uslug h2{
+    font-size: 35px;
+    color: white;
+}
+
+.uslugKatalog{
+    padding: 20px;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.sphere{
+    text-align: left;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: linear-gradient(#0000D2, #CBCBEB);
+}
+
+.cardUS{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    background-color: #D6D6D6;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.cardUS p{
+    font-size: 28px;
+}
+
+
+.action{
+    margin: 10px;
+    /* display: flex; */
+    border-radius: 40px;
+    background-color: #1F3A5F;
+    padding: 10px;
+    text-align: center;
+}
+
+.action img{
+    width: 5%;
+}
+
+
+.action p{
+    font-size: 25px;
+    color: white;
+}
+
+.pishka{
+    padding: 50px;
+}
+
+
+
+
+
+.slanted-section{
+    background-color: rgb(227, 227, 227);
+    padding: 10px;
+}
+
+.content{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.cardMaster p{
+    text-align: center;
+    margin: 10px auto;
+    width: 60%;
+}
+
+.cardMaster{
+    width: 30%;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.cardMaster img{
+    border-radius: 20px;
+}
+
+
+.cardMaster img {
+    /* Задаем жесткие размеры */
+    width: 200px;   /* Или 100%, если хочешь на всю ширину p-тега */
+    height: 250px;  /* Фиксируем высоту */
+
+    /* МАГИЯ: сохраняет пропорции, обрезая лишнее, а не сжимая фото */
+    object-fit: cover;
+
+    /* Центрируем, так как это блок */
+    display: block;
+    margin: 0 auto 15px;
+
+    border-radius: 20px;
+    background-color: #eee; /* Заглушка, если фото не прогрузится */
+}
+
+
+.contact{
+    justify-content: center;
+    display: inline-block;
+    display: grid;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.383);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.contact h2{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.numbaPhone{
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.numbaPhone a{
+    padding: 10px;
+    font-size: 50px;
+    display: block;
+    color: black;
+}
+
+.geoPos{
+    padding-top: 10px;
+    background-color: #4D596A;
+}
+
+.geoPos p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.containerFOOTCARD{
+    display: flex;
+
+    justify-content: center;
+    /* background-color: gray; */
+}
+
+
+.FOOTER{
+    background-color: #8795A9;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.FOOTER h2{
+    color: white;
+}
+
+
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Расстояние между карточками */
+}
+
+/* Общие стили для "карточек" */
+.social-card, .nav-card {
+    background-color: rgba(255, 255, 255, 0.2); /* Полупрозрачный серый */
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Специфика для левой карточки */
+.social-card {
+    width: 100px;
+    height: 100px;
+}
+
+.tg-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tg-icon i {
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Специфика для правой карточки (меню) */
+.nav-card {
+    min-width: 250px;
+}
+
+.nav-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.nav-row.center {
+    justify-content: center;
+}
+
+/* Стили ссылок */
+.nav-card a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 2px solid white; /* Белая линия под текстом */
+    padding-bottom: 2px;
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+.nav-card a:hover {
+    opacity: 0.7; /* Эффект при наведении */
+}
+
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px); /* Размытие фона — выглядит очень дорого */
+    display: none; /* Прячем по дефолту */
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    cursor: pointer;
+}
+
+/* Сама картинка в окне */
+.modal-content {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    transform: scale(0.7);
+    transition: transform 0.3s ease-out;
+}
+
+/* Когда модалка открыта, картинка увеличивается */
+.modal-overlay.active .modal-content {
+    transform: scale(1);
+}
+
+/* Кнопка закрытия */
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    .header a{
+        font-size: 17px;
+    }
+    .heroo p{
+        font-size: 25px;
+        padding: 10px;
+    }
+    .cardUS p{
+        font-size: 23px;
+    }
+    .uslug{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .action img{
+        width: 30%;
+    }
+
+    .action p{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .content{
+        flex-wrap: wrap;
+    }
+    .cardMaster{
+        margin: 10px;
+        width: 100%;
+    }
+
+
+    .contact h2{
+        font-size: 40px;
+    }
+
+    .numbaPhone a{
+        font-size: 30px;
+    }
+
+    .tg-icon i {
+        font-size: 40px;
+    }
+}
