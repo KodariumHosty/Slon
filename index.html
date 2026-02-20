@@ -22,11 +22,15 @@
         <img src="imaga/logotype.png" alt="" width="5%">
         <a href="#uslug">Услуги</a>
         <a href="#master">Мастера</a>
-
-
-        
     </div>
     
+
+    <a href="#contact">
+        <div class="buubleBTN">
+            <i class="fa-solid fa-phone tel"></i>
+        </div>
+    </a>
+
     
     <div class="heroo">
         <img src="imaga/banner.png" alt="" width="100%">
@@ -91,7 +95,7 @@
             <div class="mrDown1"></div>
             <div class="cardUS" class="hidden-lego">
                 <div class="sphere"></div>
-                <p>Вицеральный массаж</p>
+                <p>Висцеральный массаж</p>
             </div>
             <div class="mrDown1"></div>
             <div class="cardUS" class="hidden-lego">
@@ -190,7 +194,7 @@
         </div>
     </div>
 
-    <div class="mrDown50"></div>
+    <div class="mrDown50" id="contact"></div>
     <div style="display: flex; justify-content: center;">
         <div class="contact">
             <h2>Контакты</h2>
@@ -281,45 +285,46 @@
 
 
 
-    <div class="FOOTER">
-        <h2>Работаем с 9:00 до 19:00, возможен выезд на дом по предварительной записи</h2>
-        <div class="mrDown1"></div>
-        <div class="footer-container">
-            <div class="social-card">
-                <a href="https://t.me/massageinlazarevskoe" style="text-decoration: none;">
-                    <div class="tg-icon">
-                        <i class="fa-brands fa-telegram"></i>
-                    </div>
-                </a>
-            </div>
-
-            <div class="nav-card">
-                <div class="nav-row">
-                    <a href="index.html">Главная</a>
-                    <a href="#contact">Контакты</a>
-                    
-        
-                </div>
-                <div class="nav-row center">
-                    <a href="#uslug">Услуги</a>
-
-                </div>
-                <div class="nav-row">
-                    <a href="#master">Мастера</a>
-                    <a href="#addres">Адрес</a>
-                </div>
+    <div class="action hot-windows-section">
+        <div class="hot-header">
+            <h2 style="text-align: center;">Горящие окна со скидкой -15%</h2>
+            <div style="display: flex; justify-content: center;">
+                <p>Сегодня |</p>
+                <p id="date-placeholder"></p>
             </div>
         </div>
+        
+        <div class="hot-grid">
+            <div class="hot-card">
+                <h3>💌 Беляево</h3>
+                <p><strong>15:00 / 15:30</strong> — Светлана</p>
+                <a href="https://t.me/+79055515055" class="hot-btn wa">Запись в Эстетика</a>
+                <a href="https://t.me/+79267294942" class="hot-btn">Запись в MMS</a>
+            </div>
 
+            <div class="hot-card">
+                <h3>💌 Лобачевского</h3>
+                <p><strong>14:45</strong> — Мила</p>
+                <a href="https://t.me/+79055515055" class="hot-btn wa">Запись в Эстетика</a>
+                <a href="https://t.me/+79267294942" class="hot-btn">Запись в MMS</a>
+            </div>
 
-
+            <div class="hot-card">
+                <h3>💌 Матвеевская</h3>
+                <p><strong>15:45</strong> — Елена</p>
+                <p><strong>16:15</strong> — Анастасия</p>
+                <a href="https://t.me/+79055515055" class="hot-btn wa">Запись в Эстетика</a>
+                <a href="https://t.me/+79267294942" class="hot-btn">Запись в MMS</a>
+            </div>
+        </div>
+        
+        <p class="hot-note">‼️ При записи обязательно укажите, что вы по акции из Telegram. Оплата только наличными ‼️</p>
 
         <div class="mrDown50"></div>
         <hr>
         <div class="mrDown1"></div>
 
         <p align="center" style="color: white;">Сайт защищен и занесен в реестр <a href="https://kodariumlabs.space" style="color: rgb(79, 79, 255);">Kodarium</a></p>
-
     </div>
 
 
@@ -368,6 +373,22 @@
             setTimeout(() => { modal.style.display = 'none'; }, 300);
         });
     });
+</script>
+
+
+<script>
+    (function() {
+            const monthsGenitive = [ // Родительный падеж (кого? чего?) - нужен для чисел
+                'января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
+                'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'
+            ];
+
+            const now = new Date();
+            const day = now.getDate();
+            const monthName = monthsGenitive[now.getMonth()]; // Переводим в верхний регистр
+
+            document.getElementById('date-placeholder').innerText = day + ' ' + monthName;
+        })();
 </script>
 
 
