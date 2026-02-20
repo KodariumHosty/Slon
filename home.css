@@ -21,7 +21,7 @@ html{
 
 .BGG{
     display: flex;
-    justify-content: center;  /* центрирование по горизонтали */
+    justify-content: center;
     align-items: center;
 }
 
@@ -49,19 +49,19 @@ html{
 
 .header{
     z-index: 1000;
-    position: absolute; /* Оставляем */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     padding: 10px 20px;
-    background-color: #1F3A5F; /* Прозрачный фон */
+    background-color: #1F3A5F;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     box-sizing: border-box;
-    color: white; /* Добавь, чтобы текст был виден на темном фоне картинки */
+    color: white;
 }
 
 .header a{
@@ -118,6 +118,13 @@ html{
 }
 
 
+.action{
+    margin: 10px;
+    border-radius: 40px;
+    background-color: #1F3A5F;
+    padding: 10px;
+    text-align: center;
+}
 
 .action img{
     width: 5%;
@@ -169,19 +176,14 @@ html{
 
 
 .cardMaster img {
-    /* Задаем жесткие размеры */
-    width: 200px;   /* Или 100%, если хочешь на всю ширину p-тега */
-    height: 250px;  /* Фиксируем высоту */
-
-    /* МАГИЯ: сохраняет пропорции, обрезая лишнее, а не сжимая фото */
+    width: 200px;
+    height: 250px;
     object-fit: cover;
-
-    /* Центрируем, так как это блок */
     display: block;
     margin: 0 auto 15px;
 
     border-radius: 20px;
-    background-color: #eee; /* Заглушка, если фото не прогрузится */
+    background-color: #eee;
 }
 
 
@@ -233,7 +235,6 @@ html{
     display: flex;
 
     justify-content: center;
-    /* background-color: gray; */
 }
 
 
@@ -253,12 +254,11 @@ html{
 .footer-container {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Расстояние между карточками */
+    gap: 20px;
 }
 
-/* Общие стили для "карточек" */
 .social-card, .nav-card {
-    background-color: rgba(255, 255, 255, 0.2); /* Полупрозрачный серый */
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 25px;
     padding: 10px;
     display: flex;
@@ -267,7 +267,6 @@ html{
     align-items: center;
 }
 
-/* Специфика для левой карточки */
 .social-card {
     width: 100px;
     height: 100px;
@@ -288,7 +287,6 @@ html{
     color: black;
 }
 
-/* Специфика для правой карточки (меню) */
 .nav-card {
     min-width: 250px;
 }
@@ -304,19 +302,18 @@ html{
     justify-content: center;
 }
 
-/* Стили ссылок */
 .nav-card a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    border-bottom: 2px solid white; /* Белая линия под текстом */
+    border-bottom: 2px solid white;
     padding-bottom: 2px;
     margin: 0 10px;
     white-space: nowrap;
 }
 
 .nav-card a:hover {
-    opacity: 0.7; /* Эффект при наведении */
+    opacity: 0.7;
 }
 
 
@@ -328,15 +325,14 @@ html{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(8px); /* Размытие фона — выглядит очень дорого */
-    display: none; /* Прячем по дефолту */
+    backdrop-filter: blur(8px);
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 2000;
     cursor: pointer;
 }
 
-/* Сама картинка в окне */
 .modal-content {
     max-width: 90%;
     max-height: 80%;
@@ -346,12 +342,10 @@ html{
     transition: transform 0.3s ease-out;
 }
 
-/* Когда модалка открыта, картинка увеличивается */
 .modal-overlay.active .modal-content {
     transform: scale(1);
 }
 
-/* Кнопка закрытия */
 .modal-close {
     position: absolute;
     top: 20px;
@@ -368,10 +362,9 @@ html{
 
 
 .contact {
-
     flex-direction: column;
     gap: 15px;
-    background: rgba(31, 58, 95, 0.8); /* Глубокий синий с прозрачностью */
+    background: rgba(31, 58, 95, 0.8);
     backdrop-filter: blur(10px);
     border-radius: 30px;
     padding: 30px;
@@ -416,7 +409,6 @@ html{
     margin: 0;
 }
 
-/* Цвета иконок для наглядности */
 .fa-phone { color: #25D366 !important; }
 .tel { color: #ffffff !important; }
 .fa-telegram { color: #0088cc !important; }
@@ -429,12 +421,12 @@ html{
 .max-messenger-icon {
     width: 30px;
     height: 30px;
-    background: linear-gradient(135deg, #8E2DE2, #4A00E0); /* Фиолетовый градиент */
-    border-radius: 50%; /* Делаем круг */
+    background: linear-gradient(135deg, #8E2DE2, #4A00E0);
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(74, 0, 224, 0.3); /* Легкая тень в цвет */
+    box-shadow: 0 4px 10px rgba(74, 0, 224, 0.3);
     transition: 0.3s ease;
 }
 
@@ -464,10 +456,6 @@ html{
     font-size: 30px;
 }
 
-
-
-
-/* Стили для горящих окон */
 .hot-windows-section {
     padding: 30px 10%;
     background-color: #1F3A5F;
@@ -498,7 +486,7 @@ html{
 
 .hot-card h3 {
     margin-bottom: 15px;
-    color: #ffd700; /* Золотистый акцент */
+    color: #ffd700;
 }
 
 .hot-card p {
@@ -531,12 +519,6 @@ html{
     margin-top: 30px;
     font-size: 16px !important;
     color: #ff9f9f;
-}
-
-@media (max-width: 768px) {
-    .hot-windows-section {
-        padding: 20px 5%;
-    }
 }
 
 
@@ -578,6 +560,9 @@ html{
         width: 100%;
     }
 
+    .hot-windows-section {
+        padding: 20px 5%;
+    }
 
     .contact h2{
         font-size: 40px;
