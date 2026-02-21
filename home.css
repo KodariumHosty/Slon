@@ -117,6 +117,10 @@ html{
     font-size: 28px;
 }
 
+.cardUS img{
+    width: 5%;
+}
+
 
 .action{
     margin: 10px;
