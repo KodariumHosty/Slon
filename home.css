@@ -525,9 +525,20 @@ html{
     color: #ff9f9f;
 }
 
+.buttonGO{
+    display: flex;
+    align-items: center;
+    background-color: #9FAABA;
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
 
-
-
+.buttonGO p, .buttonGO i{
+    font-size: 30px;
+    color: white;
+}
 
 
 
